@@ -11,7 +11,7 @@ $(window).scroll(function () {
 });
 
 $(document).ready(function () {
-  
+
     //Disable mouse scroll wheel zoom on embedded Google Maps
     $('.maps').click(function () {
         $('.maps iframe').css("pointer-events", "auto");
@@ -93,6 +93,15 @@ $(document).ready(function () {
                 filter: ':not(.btn-very-small)'
             });
 
+    $('.sidebar-nav')
+            .onePageNav({
+                scrollSpeed: 750,
+                scrollThreshold: 0.2, // Adjust if Navigation highlights too early or too late
+                scrollOffset: 79, //Height of Navigation Bar
+                currentClass: 'active',
+                filter: ':not(.btn-very-small)'
+            });
+
     setTimeout(function () {
         $(window).scroll();
     }, 500);
@@ -162,7 +171,7 @@ $(document).ready(function () {
 /*==============================================================
     set parallax
  ==============================================================*/
-    
+
     SetParallax();
 
     $('.parallax-fix').each(function () {
@@ -259,7 +268,7 @@ $(document).ready(function () {
 /*==============================================================
     zoom gallery
 ==============================================================*/
-    
+
     $('.zoom-gallery').magnificPopup({
         delegate: 'a',
         type: 'image',
@@ -323,7 +332,7 @@ $(document).ready(function () {
 /*==============================================================
     ajax magnific popup for onepage portfolio
 ==============================================================*/
-    
+
     $('.ajax-popup').magnificPopup({
         type: 'ajax',
         alignTop: true,
@@ -387,7 +396,7 @@ $(document).ready(function () {
 /*==============================================================
     form to email
 ==============================================================*/
-    
+
     $("#success").hide();
     $("#success-contact").hide();
     //restaurant contact form
@@ -972,7 +981,7 @@ $(document).ready(function () {
     }
 
 
-    
+
 
 
     //end ready
