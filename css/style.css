@@ -2024,6 +2024,9 @@ body {
                             .titleText {
                               font-size: 60px !important;
                             }
+                            .hardHat {
+                              padding-left: 10px;
+                            }
                           }
           @media only screen and (max-width: 765px) {
               .quoteAboutUs {
