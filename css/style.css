@@ -1715,9 +1715,13 @@ footer img {max-width: 156px;}
 
 /*Custom CSS*/
 
-
+/*html, body {
+    max-width: 90%;
+    overflow-x: hidden;
+}*/
 html {
   background: white !important;
+  overflow-y: scroll;
 }
 body {
   overflow: hidden;
@@ -1819,6 +1823,10 @@ body {
 .mobileNavText:hover {
   color: #ffa000 !important;
 }
+.sidebar-nav li.active, .sidebar-nav li.active a {
+    background: #ffa000 !important;
+    color: #fff !important;
+}
 #home {
   padding-top: 0px;
   padding-right: 0px;
@@ -1832,7 +1840,7 @@ body {
   padding-left: 15px;
 }
 .fourthRow {
-  padding-left: 15px;
+  padding-left: 60px;
 }
 .fifthRow {
   padding-left: 15px;
@@ -1895,6 +1903,8 @@ body {
   }
   .menu-button {
     display:block;
+    margin-top: 20px;
+    margin-left: 20px;
   }
     .sideNav {
         display:none;
@@ -1916,16 +1926,16 @@ body {
       padding-left: 0;
     }
     .fourthRow {
-      padding-left: 0;
+      padding-left: 10px;
     }
     .fifthRow {
-      padding-left: 0;
+      padding-left: 10px;
     }
     .sixthRow {
       padding-left: 0;
     }
     .seventhRow {
-      padding-left: 0;
+      padding-left: 10px;
     }
     .eighthRow {
       padding-left: 0;
@@ -1959,7 +1969,7 @@ body {
   }
   @media only screen and (max-width: 500px) {
     .phoneNumber {
-      font-size: 60px;
+      font-size: 50px;
       padding-top: 20px;
       padding-bottom: 45px;
     }
@@ -1977,7 +1987,7 @@ body {
   }
   @media only screen and (max-width: 500px) {
     .website {
-      font-size: 22px !important;
+      font-size: 18px !important;
       text-align: center;
     }
   }
@@ -2005,7 +2015,7 @@ body {
                     }
                     @media only screen and (max-width: 520px) {
                         .contact {
-                          font-size: 25px !important;
+                          font-size: 40px !important;
                           padding-bottom: 5px
                             }
                             .craneIcon {
