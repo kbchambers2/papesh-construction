@@ -119,8 +119,8 @@ h1.page-title { margin:95px auto 0; width: 100%; }
 /* different text size */
 .text-extra-small { font-size:10px !important; line-height:15px!important;}
 .text-small { font-size:11px !important; line-height:20px!important; display: inline-block !important}
-.text-medium{ font-size:14px !important; line-height:24px !important;}
-.text-large { font-size: 15px !important; line-height: 22px !important; }
+.text-medium{ font-size:16px !important; line-height:24px !important;}
+.text-large { font-size: 17px !important; line-height: 22px !important; }
 .text-extra-large { font-size: 18px !important; line-height: 27px !important;  }
 .title-small{ font-size:20px !important; line-height:30px !important;}
 .title-medium{ font-size:24px !important; line-height:28px !important;}
@@ -1747,12 +1747,12 @@ body {
   background-size: cover;
 }
 .contactLogoFooter {
-  display: flex;
+  /*display: flex;*/
 }
 .contact {
   text-align: center;
   font-size: 40px;
-  padding-top: 85px;
+  /*padding-top: 85px;*/
   line-height: normal;
 }
 .phoneNumber {
@@ -1794,7 +1794,8 @@ body {
 }
 .footerLogo {
   text-align: center;
-  margin-left: 6%
+  display: flex;
+  flex-direction: column;
 }
 .sideNav {
   float: right;
@@ -1900,12 +1901,53 @@ body {
   font-size: 20px;
   padding-top: 20px;
 }
+.hatGC {
+  padding-bottom: 40px;
+}
+.bodyHeight {
+  min-height: 300px !important;
+}
+.show-menu .menu-wrap {
+    left: 1px !important;
+}
 
+.embed-container {
+    position: relative;
+    padding-bottom: 46.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+    }
+.embed-container iframe, .embed-container object, .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  #home{
+    position:relative;
+    width:auto;
+  }
+  #foreground-text{
+    position:absolute;
+    top:57%;
+    width:86%;
+    text-align:right;
+    margin:0 auto;
+    color: white;
+    font: bold 20px;
+    line-height: 40px;
+    text-shadow: 2px 2px 8px black;
+  }
 
 @media only screen and (max-width: 1100px) {
   body {
     background-color: white !important;
   }
+  .architecture-title {min-height: 0;}
   .menu-button {
     display:block;
     margin-top: 20px;
@@ -1913,6 +1955,9 @@ body {
   }
     .sideNav {
         display:none;
+    }
+    .aboutUs {
+        /*width: 0 !important;*/
     }
     #home {
       padding-top: 0px;
@@ -1922,7 +1967,7 @@ body {
 
     }
     .secondBackgroundImage {
-      background-size: 760px 500px !important;
+      /*background-size: 760px 500px !important;*/
     }
     .secondRow {
       padding-left: 0;
@@ -1953,11 +1998,6 @@ body {
     }
 }
 
-@media only screen and (max-width: 900px) {
-  .contactLogoFooter {
-    display: block;
-  }
-}
 
 @media only screen and (max-width: 1000px) {
   .phoneNumber {
@@ -1965,6 +2005,17 @@ body {
     padding-top: 30px;
     padding-bottom: 75px;
   }
+  .embed-container {
+      padding-bottom: 41.25%;
+    }
+}
+@media only screen and (max-width: 900px) {
+  .contactLogoFooter {
+    display: block;
+  }
+  .embed-container {
+      padding-bottom: 37.25%;
+    }
 }
 @media only screen and (max-width: 700px) {
   .phoneNumber {
@@ -1992,6 +2043,9 @@ body {
   .peopleText {
     font-size: 12px !important;
   }
+  .owlContainer {
+    /*height: 735px !important;*/
+  }
 }
   @media only screen and (max-width: 500px) {
     .phoneNumber {
@@ -2001,16 +2055,22 @@ body {
     }
 }
 
-@media only screen and (max-width: 400px) {
-  .bigOrangeBox {
-    display: none;
-  }
- }
  @media only screen and (max-width: 600px) {
    .headerText {
      font-size: 30px !important;
    }
+   .embed-container {
+       padding-bottom: 22.25%;
+     }
   }
+  @media only screen and (max-width: 400px) {
+    .bigOrangeBox {
+      display: none;
+    }
+    .embed-container {
+        padding-bottom: 17.25%;
+      }
+   }
   @media only screen and (max-width: 500px) {
     .website {
       font-size: 18px !important;
@@ -2021,10 +2081,16 @@ body {
       font-size: 10px !important;
       text-align: center;
     }
+    .footerLogo {
+      margin-right: 5%;
+    }
 }
   @media only screen and (max-width: 1090px) {
       .contact {
         font-size: 35px !important;
+          }
+          .BryanDozerImage {
+            padding-top: 83px !important;
           }
         }
         @media only screen and (max-width: 946px) {
@@ -2060,3 +2126,8 @@ body {
                   }
                 }
    }
+   @media (max-width: 991px) {
+     .quoteTeddy {
+       padding-bottom: 0 !important;
+     }
+}
